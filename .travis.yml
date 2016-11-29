@@ -31,4 +31,8 @@ licenses:
   - 'android-sdk-license-.+'
   - 'google-gdk-license-.+'
 
-script: ./gradlew connectedAndroidTest
+#script: ./gradlew connectedAndroidTest
+#script:
+#- bundle exec rake build
+#- bundle exec rake builddoc
+script: ./gradlew clean assembleDebug testDebug -PdisablePreDex
